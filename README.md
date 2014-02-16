@@ -1,4 +1,6 @@
-kocsenc.github.io
-=================
+webSite
+=======
 
-Website Hosting
+The repository to my website
+	Front End framework - Foundation
+	Serverside - NGiNX
