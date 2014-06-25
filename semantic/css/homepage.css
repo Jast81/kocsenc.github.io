@@ -26,12 +26,6 @@ body {
   font-family: 'Source Sans Pro', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-.ui.header,
-h1,
-h2 {
-  font-weight: normal !important;
-}
-
 h1.ui.header {
   font-size: 3em;
 }
@@ -48,7 +42,7 @@ h5.ui.header,
 }
 
 a {
-  color: #009FDA;
+
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   -moz-transition: color 0.3s ease;
@@ -123,6 +117,10 @@ p a {
 
 .ui.cube.shape .side {
   background-color: transparent;
+}
+
+.footer {
+  text-align: center;
 }
 
 /*******************************
