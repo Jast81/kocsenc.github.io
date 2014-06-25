@@ -1,226 +1,166 @@
 <!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-
+<html>
 <head>
-	<meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  
-  	<title>Kocsen Chung</title>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
- 	<link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/foundation.css" />
-  <link rel="stylesheet" href="css/icons/fc-webicons.css">
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
-  
- 	<script src="js/vendor/custom.modernizr.js"></script>
- 	<script src="js/vendor/jquery.js"></script>
-  
- 	<!-- CODERBITS API LINK -->
- 	<link href="css/coderbits/coderbits.css" media="all" rel="stylesheet" type="text/css">
-	<script src="css/coderbits/coderbits.js"></script>
- 	<!-- END CODERBITS  -->
+  <!-- Site Properities -->
+  <title>Kocsen Chung</title>
+
+  <!-- Stylesheets -->
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="semantic/css/semantic.css">
+  <style type="text/css">
+    body{
+      font-family: helvetica;
+    }
+  </style>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+  <script src="semantic/javascript/semantic.js"></script>
 
 </head>
-<body>
-
-  <!-- Navigation Bar -->  
-  <div class="contain-to-grid sticky">
-    <nav class="top-bar">
-        <ul class="title-area">
-        <!-- Title Area -->
-          <li class="name">
-              <h1><a href="index.html"> Kocsen </a></h1>
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
-      <section class="top-bar-section">
-         
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="divider"></li>
-            <li class="active"><a href="index.html">Home/About</a></li>
-            <li class="divider"></li>
-            <li class="active"><a href="activities.html">Activities</a></li> 
-            
-            <li class="has-dropdown"><a href="projects.html">Projects</a>
-              <ul class="dropdown">
-                <li><a href="projects.html">All Projects</a></li>
-                <li><label>Personal</label></li>  
-                <li class="divider"></li>
-                <li><a href="projects.html#RaspberryPi">RaspberryPi</a></li>
-                <li><a href="projects.html#Ruby and iOS">Pixel People Helper</a></li>
-                <li><a href="projects.html#Project Euler">Project Euler</a></li>
-                
-                <li><label>SSE</label></li>
-                <li class="divider"></li>
-                <li><a href="projects.html">Volumetric Display</a></li>
-                
-                <li><label>Professional</label></li>
-                <li class="divider"></li>
-                <li><a href="projects.html">Yolo</a></li>
-              </ul>
-            </li>
-
-            <li class="divider"></li>
-            <li class="active"><a href="" data-reveal-id="ResumeModal">Resume</a></li>
-
-            <li class="divider show-for-small"></li>
-            <li class="has-form">
-              <a class="button" href="mailto:kxc4519@rit.edu">Email Me!</a>
-            </li>
-          </ul>
-      </section>
-    </nav>
-    <div id="ResumeModal" class="reveal-modal">  
-      <h4>For security reasons, my Resume is available upon <a href="mailto:kxc4519@rit.edu">request</a>. Meanwhile you can learn a lot about me by browsing my site.</h4>  
-      <a class="close-reveal-modal">&#215;</a>
-    </div>  
-  </div>
-  <!-- END Navigation Bar -->
-
-	<div class="row">
-    <div class="large-12 columns">
-  
-      <div class="row">
-        <div class="large-6 columns">
-          <img src="img/rotatecubeLarge.jpg"><br>
-        </div>
-
-
-        <div class="large-6 columns">
-
-          <h3 class="show-for-small">Header<hr/></h3>
-
-          <div class="panel">
-            <h4 class="hide-for-small">Hey There!<hr/></h4>
-          <h5 class="subheader">Bienvenidos! My name is Kocsen Chung and I am a third year Software Engineer at Rochester Institute of Technology. I originate from South America and have been passionate about software and computers since my PSP mod back in Middle School. Of course I also like other things which can be found in the <a href="activities.html">activities</a> page. Feel free to explore the projects I'm working on or my resume; and if you want to contact me email me above!</h5>
-          </div>
-
-          <div class="row">
-            <div class="large-7 small-7 columns">
-              <div class="panel">
-              	<h5>CoderBits</h5>
-              	<section id="coderbits" data-coderbits-username="kocsenc"></section>
-              </div>
-            </div>
-            <div class="large-5 small-5 columns">
-              <div class="panel">
-                <h5>Hey guys...</h5>
-                  <h6 class="subheader">You know how you look at old code and say,
-			      "Wow, I can't believe I actually wrote this treachery?" Well
-			      welcome <a href="http://dev.kocsen.com">my new site!</a></h6>
-              </div>
+<body id="home">
+  <div class="ui inverted page grid masthead segment">
+    <div class="column">
+      <div class="inverted secondary pointing ui menu">
+        <div class="header item">Kocsen Chung</div>
+        <div class="right menu">
+          <div class="ui top right pointing mobile dropdown link item">
+            Menu
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="item">Classes</a>
+              <a class="item">Cocktail Hours</a>
+              <a class="item">Community</a>
             </div>
           </div>
+          <a class="item">Projects</a>
+          <a class="item">Activities</a>
+          <a class="item">Blog</a>
         </div>
       </div>
-      
-      <div class="panel">
-        <blockquote>
-          <i>Computers are, in reality, <b>dumb</b>; but they are obedient, and that is what makes them so powerful.<br><b>    -Kocsen Chung</b>
-        </blockquote>
+      <!-- Start Animation Code from html5maker.com -->
+      <iframe height="400" width="940" src="http://cdn.html5maker.com/2138c69837c4078c0953c7e598b2b5a5f900a9b8a7.html" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
+      <!-- End Animation Code -->
+
+
+      <div class="ui hidden transition information">
+        <h1 class="ui inverted header">
+          Your Cat is Dumb
+        </h1>
+        <p>At least he won't reach his highest potential unless you enroll him in Kocsen Chung's 2013 class.</p>
+        <div class="large basic inverted animated fade ui button">
+          <div class="visible content">Come to ICU 2013</div>
+          <div class="hidden content">Register Now</div>
+        </div>
       </div>
-
-      
- 
-      <!-- Thumbnails -->
-      <div class="row">
-
-        <div class="large-12 show-for-small columns">
-        <h3>Header</h3><hr>
-        </div>
-
-        <div class="large-3 small-6 columns">
-          <img src="http://farm4.staticflickr.com/3495/5838457446_98f38bd989_m.jpg">
-          <div class="panel">
-            <p>Flying</p>
-          </div>
-        </div>
-
-        <div class="large-3 small-6 columns">
-		  <img width="180" src="https://cdn1.iconfinder.com/data/icons/metro-uinvert-dock/256/Coding_App.png">
-          <div class="panel">
-            <p>Coding</p>
-          </div>
-        </div>
-
-        <div class="large-3 small-6 columns">
-          <img src="http://farm6.staticflickr.com/5091/5418574406_d95465b96f.jpg">
-          <div class="panel">
-            <p>Cubing</p>
-          </div>
-        </div>
-
-        <div class="large-3 small-6 columns">
-          <img src="http://farm9.staticflickr.com/8510/8420312876_2524de6bc3_m.jpg">
-          <div class="panel">
-            <p>Teaching  </p>
-          </div>
-        </div>
-
-      </div>
- 
-      <!-- End Thumbnails -->
- 
-      <!-- Footer -->
-      <footer class="row">
-      <div class="large-12 columns"><hr />
-          <div class="row">
-            <div class="large-5 columns">
-                <h7 class="subheader"><i><p>&copy; 2013 Kocsen Chung. <a href="" data-reveal-id="CRModal">Some</a> Rights Reserved</p></i></h7>
-            </div>
-            <div class="large-7 columns">
-                <ul class="inline-list right">
-                  <li><h5 class="subheader"><i>Connect </i>{</h5></li>
-                  <li><a class="fc-webicon github"
-				  href="https://github.com/kocsenc/" target="_blank">GitHub</a></li>
-                  <li><a class="fc-webicon linkedin" href="http://www.linkedin.com/pub/kocsen-chung/58/a21/592" target="_blank">LinkedIn</a></li>
-                  <li><a class="fc-webicon googleplus" href="https://plus.google.com/114411486205985147999/" target="_blank">Google+</a></li>
-                  <li><h5 class="subheader">}</h5></li>
-                </ul>
-            </div>
-          </div>
-      </div>
-      </footer>
-      <div id="CRModal" class="reveal-modal">  
-      <h5>Yea, I am aware of the legal <i>shenanigans!</i><br>Credit to:</h5> 
-      <h5 class="subheader">
-        <ul class="no-bullet">
-          <li>Flickr
-            <ul>
-              <li>dribblepopular</li>
-              <li>bobosh_t</li>
-            </ul>
-          </li>
-          <li>sotechdesign.com.au</li>
-          <li>Chillingo - Pixel People</li>
-          <li>mick_pattison</li>
-          <li>And of course, all the awesome tech's and API's out there!<li>
-        </ul>
-      </h5>
-      <!-- End Footer -->
-      
-      
-
-      <a class="close-reveal-modal">&#215;</a>
-</div> 
-        
     </div>
-	</div>
-  <script>
-    document.write('<script src=js/vendor/' +s
-    ('__proto__' in {} ? 'zepto' : 'jquery') +
-    '.js><\/script>')
-  </script>
-  <script src="js/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
-  
-  <!-- End Footer -->
+  </div>
+  <div class="ui page grid overview segment">
+    <div class="ui two wide column"></div>
+    <div class="twelve wide column">
+      <div class="ui three column center aligned stackable divided grid">
+        <div class="column">
+          <div class="ui icon header">
+            <i class="circular code link icon"></i>
+            Projects
+          </div>
+          <p>From the first hello world, to the last async system I have put together.</p>
+          <p><a class="ui blue right labeled icon button" href="#">Explore <i class="right long arrow icon"></i></a></p>
+        </div>
+        <div class="column">
+          <div class="ui icon header">
+            <i class="circular plane link icon"></i>
+            Activities
+          </div>
+          <p>Model flying, hardware builds and other hobbies I enjoy on my free time</p>
+          <p><a class="ui teal right labeled icon button" href="#">Enjoy <i class="right long arrow icon"></i></a></p>
+        </div>
+        <div class="column">
+          <div class="ui icon header">
+            <i class="circular user link icon"></i>
+            Blog
+          </div>
+          <p>I have opinions. Worthy discussion points are here.</p>
+          <p><a class="ui teal right labeled icon button" href="#">Visit <i class="right long arrow icon"></i></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="ui page grid stackable segment">
+    <div class="row">
+      <div class="column">
+        <h1 class="center aligned ui header">
+          Connect
+        </h1>
+        <div class="ui horizontal divider"><i class="heart icon"></i></div>
+      </div>
+    </div>
+    <div class="center four column aligned row">
+      <div class="column">
+        <div class="circular ui icon button">
+          <i class="icon huge github"></i>
+        </div>
+      </div>
+      <div class="column">
+        <div class="circular ui icon button">
+          <i class="icon huge facebook"></i>
+        </div>
+      </div>
+      <div class="column">
+        <div class="circular ui icon button">
+          <i class="icon huge linkedin"></i>
+        </div>      
+      </div>
+      <div class="column">
+        <div class="circular ui icon button">
+          <i class="icon huge youtube"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui inverted teal page grid segment">
+    <div class="ten wide column">
+      <div class="ui three column stackable grid">
+        <div class="column">
+          <div class="ui header">Courses</div>
+          <div class="ui inverted link list">
+            <a class="item">Registration</a>
+            <a class="item">Course Calendar</a>
+            <a class="item">Professors</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui header">Library</div>
+          <div class="ui inverted link list">
+            <a class="item">A-Z</a>
+            <a class="item">Most Popular</a>
+            <a class="item">Recently Changed</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui header">Community</div>
+          <div class="ui inverted link list">
+            <a class="item">BBS</a>
+            <a class="item">Careers</a>
+            <a class="item">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="six wide right floated aligned column">
+      <h3 class="ui header">Contact Us</h3>
+      <addr>
+        237 Catberry Road <br>
+        Milton Keynes, London <br>
+      </addr>
+      <p>(404) 867-5309</p>
+    </div>
+  </div>
 </body>
-</body>
+
 </html>
