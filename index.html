@@ -1,214 +1,611 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <!-- Standard Meta -->
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <!-- Site Properities -->
-    <title>Kocsen Chung</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Stylesheets -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700'
-          rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="semantic/css/semantic.css">
-    <link rel="stylesheet" type="text/css" href="semantic/css/homepage.css">
+  <title>Kocsen Chung</title>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-    <script src="semantic/javascript/semantic.js"></script>
+  <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/freelancer.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
 </head>
-<body id="home">
-<div class="ui inverted page grid masthead segment">
-    <div class="column">
-        <div class="inverted secondary pointing ui menu">
-            <div class="header item">Kocsen Chung</div>
-            <div class="right menu">
-                <div class="ui top right pointing mobile dropdown link item">
-                    Menu
-                    <i class="dropdown icon"></i>
 
-                    <div class="menu">
-                        <a class="item">Classes</a>
-                        <a class="item">Cocktail Hours</a>
-                        <a class="item">Community</a>
-                    </div>
-                </div>
-                <a class="item">Projects</a>
-                <a class="item">Activities</a>
-                <a class="item">Blog</a>
-            </div>
-        </div>
+<body id="page-top" class="index">
 
-
-        <div class="ui hidden transition information">
-            <h1 class="ui inverted header">
-                Your Cat is Dumb
-            </h1>
-
-            <p>At least he won't reach his highest potential unless you enroll him in Kocsen Chung's 2013 class.</p>
-
-            <div class="large basic inverted animated fade ui button">
-                <div class="visible content">Come to ICU 2013</div>
-                <div class="hidden content">Register Now</div>
-            </div>
-        </div>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#page-top">Kocsen Chung</a>
     </div>
-</div>
-<div class="ui page grid overview segment">
-    <div class="ui two wide column"></div>
-    <div class="twelve wide column">
-        <div class="ui three column center aligned stackable divided grid">
-            <div class="column">
-                <div class="ui icon header">
-                    <i class="circular code link icon"></i>
-                    Projects
-                </div>
-                <p>From the first hello world, to the last async system I have put together.</p>
 
-                <div class="ui animated fade black icon button">
-                    <a class="visible content">
-                        Explore
-                        <i class="right long arrow icon"></i>
-                    </a>
-
-                    <div class="hidden content">
-                        <i class="terminal icon"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="ui icon header">
-                    <i class="circular plane link icon"></i>
-                    Activities
-                </div>
-                <p>Model flying, hardware builds and other hobbies I enjoy on my free time</p>
-
-                <div class="ui animated fade orange icon button">
-                    <a class="visible content">
-                        Enjoy
-                        <i class="right long arrow icon"></i>
-                    </a>
-
-                    <div class="hidden content">
-                        <i class="smile icon"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="ui icon header">
-                    <i class="circular chat outline link icon"></i>
-                    Blog
-                </div>
-                <p>I have opinions. Worthy discussion points are here.</p>
-
-                <a href="http://kocsen-hfoss.blogspot.com" target="_blank">
-                    <div class="ui blue animated button">
-                        <div class="visible content">
-                            Next
-                            <i class="right long arrow icon"></i>
-                        </div>
-                        <div class="hidden content">
-                            <i class="chat outline icon"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li class="page-scroll">
+          <a href="#portfolio">Projects</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#about">About</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-</div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
 
-
-<div class="ui page grid stackable segment">
+<!-- Header -->
+<header>
+  <div class="container">
     <div class="row">
-        <div class="column">
-            <h1 class="center aligned ui header">
-                Connect
-            </h1>
+      <div class="col-lg-12">
+        <img class="img-responsive img-circle" src="img/kocsen.jpg" alt="img/profile.png"
+             style="max-width: 15%;">
 
-            <div class="ui horizontal divider"><i class="globe icon"></i></div>
+        <div class="intro-text">
+          <span class="name">Kocsen Chung</span>
+          <span class="skills">Software Engineer•Pilot•Filmmaker</span>
         </div>
+      </div>
     </div>
-    <div class="center four column aligned row">
-        <div class="column">
-            <a href="https://github.com/kocsenc" rel="me" target="_blank" class="circular ui icon button">
-                <i class="icon huge github"></i>
-            </a>
-        </div>
-        <div class="column">
-            <a href="https://plus.google.com/+KocsenChung" rel="me" target="_blank" class="circular ui icon button">
-                <i class="icon huge google plus"></i>
-            </a>
-        </div>
-        <div class="column">
-            <a href="https://www.linkedin.com/in/kocsen" rel="me" target="_blank" class="circular ui icon button">
-                <i class="icon huge linkedin"></i>
-            </a>
-        </div>
-        <div class="column">
-            <a href="https://www.youtube.com/user/GzoGuitarWz" rel="me" target="_blank" class="circular ui icon button">
-                <i class="icon huge youtube"></i>
-            </a>
-        </div>
-    </div>
+  </div>
+</header>
 
-    <!-- Technologies -->
-    <!--     <div class="row">
-          <div class="column">
-            <h1 class="center aligned ui header">
-              Technologies
-            </h1>
-            <div class="ui horizontal divider"><i class="wrench icon"></i></div>
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Projects</h2>
+        <a href="https://github.com/kocsenc" target="_blank"><i class="fa fa-github-alt fa-5x"
+                                                                style="color: black;"></i></a>
+        <hr style="visibility: hidden;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 portfolio-item">
+        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/portfolio/cooper_coop_cat.svg" class="img-responsive portfolio-image">
+        </a>
+      </div>
+      <div class="col-sm-4 portfolio-item">
+        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/portfolio/android.png" class="img-responsive portfolio-image">
+        </a>
+      </div>
+      <div class="col-sm-4 portfolio-item">
+        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/portfolio/cake.png" class="img-responsive portfolio-image" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="success" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>About</h2>
+        <hr class="star-light">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-2">
+        <p>
+          I have a focus on Web Technologies, CI systems and Application Architecture & Development. I am all
+          about automation and making sure robust software is handling a lot of the heavy lifting.
+          I also dive into hardware projects like the Muse headband or Raspberry Pi + ArchLinux combo.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <p>
+          I am one of the first humans to receive a <a
+          href="http://community.redhat.com/blog/2014/03/how-the-first-minor-in-foss-grew-from-an-idea-into-foss-magic/"
+          target="_blank">minor in Free & Open Source Software</a
+          >.
+          As a result I love playing around with new tools and new OS's constantly.
+          <br>
+          On my non-coding free time I like to make movies and fly my self-built QAV 250 quadcopter. I also
+          fly
+          other aircraft and love thrill parks.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h3>Employment</h3>
+        </div>
+      </div>
+      <div class="col-lg-12 text-center">
+        <ul class="list-inline text-center" id="companyList">
+          <li>
+            <i class="fa fa-print fa-5x"></i><br><b><a href="http://www.rocosoft.com"
+                                                       target="_blank">RSA</a></b></li>
+          <li>
+            <img class="img-responsive" src="img/company/rit.svg" style="max-width:9em;"/><br><b><a
+            href="http://www.se.rit.edu/" target="_blank">RIT</a></b></li>
+          <li>
+            <img class="img-responsive" src="img/company/datto.svg" style="max-width:10em;"/><br><b><a
+            href="http://www.datto.com" target="_blank">Datto</a></b></li>
+          <li>
+            <i class="fa fa-apple fa-5x"></i><br><b><a href="http://www.apple.com" target="_blank">Apple</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div>
+  <div class="header-unit">
+    <div id="video-container">
+      <video muted autoplay loop class="fillWidth">
+        <source src="img/quad.mp4" type="video/mp4"/>
+        Your browser does not support the video tag. I suggest you upgrade your browser.
+      </video>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Contact Me</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Name</label>
+              <input type="text" class="form-control" placeholder="Name" id="name" required
+                     data-validation-required-message="Please enter your name.">
+
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Email Address</label>
+              <input type="email" class="form-control" placeholder="Email Address" id="email" required
+                     data-validation-required-message="Please enter your email address.">
+
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Message</label>
+                            <textarea rows="2" class="form-control" placeholder="Message" id="message" required
+                                      data-validation-required-message="Please enter a message."
+                                      style="font-size: 12pt;"
+                              ></textarea>
+
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <br>
+
+          <div id="success"></div>
+          <div class="row">
+            <div class="form-group col-xs-12">
+              <button type="submit" class="btn btn-success btn-lg">Send <i
+                class="fa fa-paper-plane-o"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="footer-above">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col col-md-4">
+          <h3>Location</h3>
+
+          <p>Rochester, NY<br>Cupertino, CA<br>Lima, Peru</p>
+        </div>
+        <div class="footer-col col-md-4">
+          <h3>Around the Web</h3>
+          <ul class="list-inline">
+            <li>
+              <a href="https://facebook.com/kocsen" class="btn-social btn-outline" target="_blank"><i
+                class="fa fa-fw fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kocsen" class="btn-social btn-outline" target="_blank"><i
+                class="fa fa-fw fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="https://www.github.com/kocsenc" class="btn-social btn-outline" target="_blank"><i
+                class="fa fa-fw fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col col-md-4">
+          <h3>Resume</h3>
+
+          <p>Resume is avaiable upon request. <a
+            href="https://linkedin.com/in/kocsen" target="_blank">LinkedIn</a> would be a good place to
+            scope out my
+            skillset.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-below">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          Copyright &copy; Kocsen Chung 2015
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll visible-xs visible-sm">
+  <a class="btn btn-primary" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>
+
+<!-- Portfolio Modals -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2><a href="https://ratemycoop.io" target="_blank">Rate My Coop</a></h2>
+            <img src="img/portfolio/cooper_coop_cat.svg" class="img-responsive portfolio-image"
+                 style="margin-left:auto; margin-right:auto; display:block; max-height: 10em;">
+
+
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <div class="well">
+                  <small>Full Javascript tech stack</small>
+                  <ul class="list-inline">
+                    <li>
+                      <span class="label label-danger">AngularJS</span>
+                      <span class="label label-default">Yeomen</span>
+                    </li>
+                  </ul>
+                  <ul class="list-inline">
+                    <li>
+                      <span class="label label-success">NodeJS</span>
+                  <span class="label label-success" style="margin-right: 0.25em">
+                    <a href="http://loopback.io" style="color: white;">
+                      Loopback
+                      <i class="fa fa-question-circle"></i>
+                    </a>
+                  </span>
+                      <span class="label label-default">MariaDB</span>
+                    </li>
+                  </ul>
+                  <ul class="list-inline">
+                    <li>
+                      <span class="label label-info">Fedora</span>
+                      <span class="label label-default">Grunt</span>
+                      <span class="label label-default">Nginx</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <p style="text-align: left">
+              One of my favorite software stories to tell. On a normal college day someone asks, "Why is
+              there
+              no tool to rate your coop?" Co-op culture at a college-wide level is rare; not at RIT.
+              Because many
+              majors require co-ops for graduation, it becomes way more serious. We could only
+              find this <a href="http://www.ratemycoopjob.com" target="_blank">this</a> crappy website,
+              but
+              it sucks.
+              <br><br>
+              <a href="https://github.com/craigcabrey" target="_blank">Craig</a> and I looked at each
+              other,
+              paused, and said
+              "Let's do it". It didn't take long before the <i>nerd talk</i> began; the scope of the
+              project,
+              the models and their relationships, the tech stack,
+              the delivery date (which was about in 3 weeks).
+              <br><br>
+              The domain
+              <a href="https://ratemycoop.io" target="_blank">ratemycoop.io</a> was purchased and the ball
+              was rolling.
+              Every night since then
+              kind of
+              felt like the scene from <a href="https://youtu.be/4c0lk-LtLI0" target="_blank">The
+              Social Network</a>
+              where the developers are wired in just hammering things out
+              <small>(yes, even documentation)</small>
+              .
+              <br><br>
+              We had a strong prototype within hours, but if
+              we wanted to release by career fair, we needed help. It didn't take long to find
+              <a href="https://ratemycoop.io/#/about" target="_blank">enthusiastic colleagues</a> to add
+              features and
+              for a successful release.
+              <br>
+              Within days we had over 1000 sessions and hundreds of reviews.
+              <br>
+            </p>
+            <small>Did I mention, we <a href="https://github.com/craigcabrey/ratemycoop" target="_blank">released</a>
+              it to the public?
+            </small>
+            <ul class="list-inline item-details">
+              <li>Concept:
+                <strong>Feb 9, 2015
+                </strong>
+              </li>
+              <li>Release:
+                <strong>Mar 3, 2015
+                </strong>
+              </li>
+              <li>Editorials:
+                <strong>
+                  <a href="http://ritbehindthebricks.com/rate-my-coop-2/" target="_blank">Behind the
+                    Bricks</a>
+                  •
+                  <a
+                    href="https://www.reddit.com/r/rit/comments/2xszeq/introducing_rate_my_coop_beta_a_new_service_for/"
+                    target="_blank">Reddit</a>
+                </strong>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+              Close
+            </button>
           </div>
         </div>
       </div>
-      <div class="eight column row">
-        <div class="column">
-          <i class="android big icon"></i>
-        </div>
-
-        <div class="column">
-          <i class="apple big icon"></i>
-        </div>
-
-        <div class="column">
-          <i class="css3 big icon"></i>
-        </div>
-
-        <div class="column">
-          <i class=" big icon"></i>
-        </div>
-
-        <div class="column">
-          <i class=" big icon"></i>
-        </div>
-
-        <div class="column">
-          <i class=" big icon"></i>
-        </div>
-
-        <div class="column">
-          <i class=" big icon"></i>
-        </div>
-
-        <div class="column">
-          <i class=" big icon"></i>
-        </div> -->
-</div>
-
-
-<hr>
-<div class="row">
-    <div class="ui divided horizontal footer fluid link center">
-        <div class="item">
-            Copyright © All Rights Reserved
-        </div>
-        <div class="item">
-            Kocsen Chung
-        </div>
     </div>
+  </div>
 </div>
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2><a href="https://github.com/kocsenc/android-scraper" target="_blank">Android Scraper</a>
+            </h2>
+            <img src="img/portfolio/android.png" class="img-responsive img-centered"
+                 style="max-height: 8em;">
+
+
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <div class="well">
+                  <small>Data Analysis tech stack</small>
+                  <ul class="list-inline">
+                    <li>
+                      <span class="label label-warning">Python</span>
+                      <span class="label label-info">Java</span>
+                      <span class="label label-success">R</span>
+                      <span class="label label-primary">Bash</span>
+                    </li>
+                  </ul>
+                  <ul class="list-inline">
+                    <li>
+                      <span class="label label-default">PostgreSQL</span>
+                    </li>
+                  </ul>
+                  <ul class="list-inline">
+                    <li>
+                      <span class="label label-danger">Red Hat Enterprise</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <p style="text-align: left">
+              The Android Scraper is a big data and computing intensive research project. Its
+              a way to analyze a whopping <strong>100,000+</strong> apps
+              <small>(100's of TBs)</small>
+              to find out what features they have for data analysis. Features such as
+              <span class="label label-default">sharing to social media</span>,
+              <span class="label label-default">SSL use</span>,
+              <span class="label label-default">password encryption</span> and more.
+              <br><br>
+              It consists of 2 main phases:
+              <span class="label label-info">Gathering</span> and
+              <span class="label label-info">Analyzing</span>
+              <br>
+
+              <span class="label label-info">Gathering</span> is all about finding efficient ways to break
+              apart android
+              apps
+              through de-compilation and de-obfuscation to get source code.
+              <br>
+              <span class="label label-info">Analyzing</span> is all about finding robust ways to run
+              static-analysis
+              tools
+              to figure out what features the apps have. Then, use data analysis to discover feature
+              trends and impact.
+              <br>
+            </p>
+            <p>
+              Here's a <a href="http://android.kocsen.com" target="_blank">live presentation</a> about it.
+              And the <a href="https://github.com/kocsenc/android-scraper">repo</a>.
+            </p>
+            <ul class="list-inline item-details">
+              <li>Date:
+                <strong>Jan 2015 - Present</strong>
+              </li>
+              <li>Editorials:
+                <strong><a href="http://android.kocsen.com">Presentation</a></strong>
+                •
+                <strong style="color: gray">Pending Research Paper</strong>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>Secret</h2>
+            <hr class="star-primary">
+            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <div class="well">
+                  <small>Simple tech stack</small>
+                  <ul class="list-inline">
+                    <li>
+                      <span class="label label-info">?</span>
+                    </li>
+                  </ul>
+                  <!--<ul class="list-inline">-->
+                  <!--<li>-->
+                  <!--<span class="label label-default">PostgreSQL</span>-->
+                  <!--</li>-->
+                  <!--</ul>-->
+                  <!--<ul class="list-inline">-->
+                  <!--<li>-->
+                  <!--<span class="label label-danger"></span>-->
+                  <!--</li>-->
+                  <!--</ul>-->
+                </div>
+              </div>
+            </div>
+
+
+            <p>
+              Sorry, this guy is a <b>secret</b>. Doesen't that cake look yummy? Go eat some dessert.
+            </p>
+            <ul class="list-inline item-details">
+              <li>Date:
+                <strong>?</strong>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/freelancer.js"></script>
+
 </body>
 
 </html>
